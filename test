@@ -1,0 +1,23 @@
+#!/bin/bash
+
+Help() {
+    echo "Help command"
+    echo "Next line"
+}
+
+start_frontend() {
+ # yarn add node-sass
+ # yarn install
+ # yarn start
+}
+
+# Get the options
+while getopts ":h" option; do
+    case $option in
+    h) # display Help
+        Help
+        exit
+        ;;
+    esac
+done
+Help
